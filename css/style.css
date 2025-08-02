@@ -2,6 +2,9 @@
 :root {
     --azzurro-chiaro: rgb(86, 178, 244);
     --arancione: rgb(255, 165, 0);
+    --grigio-chiaro: rgb(174, 176, 177);
+    --bianco: rgb(255, 255, 255);
+    --verde-prato: rgb(14, 147, 30);
 }
 
 /* RESET */
@@ -66,9 +69,6 @@ ul {
 /* HERO */
 .hero {
     background-color: darkblue;
-
-    /* debug */
-    min-height: 300px;
 }
 
 .hero-content {
@@ -76,6 +76,17 @@ ul {
     justify-content: center;
     align-items: center;
 
+}
+
+/* CONTENT BLOCK */
+.content-block-img {
+    width: 60%;
+    background-color: dodgerblue;
+}
+
+.content-block-txt {
+    width: 40%;
+    background-color: pink;
 }
 
 /* Utilities */
@@ -115,4 +126,20 @@ ul {
 
 .bg-color-arancione {
     background-color: var(--arancione)
+}
+
+.bg-color-grigio-chiaro {
+    background-color: var(--grigio-chiaro);
+}
+
+.bg-color-bianco {
+    background-color: var(--bianco)
+}
+
+.bg-color-verde-prato {
+    background-color: var(--verde-prato)
+}
+
+.flex-dir-row-rev {
+    flex-direction: row-reverse;
 }
