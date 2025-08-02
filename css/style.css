@@ -37,7 +37,11 @@ ul {
 /* HEADER */
 
 .header {
-    height: 100px;
+    height: 80px;
+    align-items: center;
+}
+
+.header-nav {
     align-items: center;
 }
 
@@ -57,6 +61,21 @@ ul {
     width: 20%;
     justify-content: flex-end;
     text-align: right;
+}
+
+/* HERO */
+.hero {
+    background-color: darkblue;
+
+    /* debug */
+    min-height: 300px;
+}
+
+.hero-content {
+    background-color: plum;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* Utilities */
