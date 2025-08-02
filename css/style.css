@@ -1,0 +1,99 @@
+/* CUSTOM */
+:root {
+    --azzurro-chiaro: rgb(86, 178, 244);
+    --arancione: rgb(255, 165, 0);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Layout */
+.container {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+
+.header {
+    height: 100px;
+    align-items: center;
+}
+
+.nav-img {
+    width: 20%;
+}
+
+.nav-menu {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.nav-btn {
+    width: 20%;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+/* Utilities */
+.border {
+    border: 1px dashed black;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.bg-color-azzurro-chiaro {
+    background-color: var(--azzurro-chiaro);
+}
+
+.bg-color-arancione {
+    background-color: var(--arancione)
+}
