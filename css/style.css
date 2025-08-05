@@ -1,12 +1,12 @@
 /* CUSTOM */
 :root {
-    --azzurro-chiaro: rgb(86, 178, 244);
-    --arancione: rgb(255, 165, 0);
-    --grigio-chiaro: rgb(174, 176, 177);
-    --bianco: rgb(255, 255, 255);
-    --verde-prato: rgb(14, 147, 30);
-    --grigio-scuro: rgb(45, 46, 46);
-    --rosa: rgb(245, 119, 245);
+    --light-azure: rgb(86, 178, 244);
+    --orange: rgb(255, 165, 0);
+    --light-gray: rgb(174, 176, 177);
+    --white: rgb(255, 255, 255);
+    --green-grass: rgb(14, 147, 30);
+    --dark-gray: rgb(45, 46, 46);
+    --pink: rgb(245, 119, 245);
 }
 
 /* RESET */
@@ -28,6 +28,7 @@ ul {
     list-style: none;
 }
 
+/* COMMON */
 /* Layout */
 .container {
     width: 70%;
@@ -39,81 +40,17 @@ ul {
     display: flex;
 }
 
-/* HEADER */
-
-.header {
-    height: 80px;
-    align-items: center;
-}
-
-.header-nav {
-    align-items: center;
-}
-
-.nav-img {
-    width: 20%;
-}
-
-.nav-menu {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
-}
-
-.nav-btn {
-    width: 20%;
-    justify-content: flex-end;
-    text-align: right;
-}
-
-/* HERO */
-.hero {
-    background-color: darkblue;
-}
-
-.hero-content {
-    background-color: plum;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/* CONTENT BLOCK */
-.content-block-img {
-    width: 60%;
-    background-color: dodgerblue;
-}
-
-.content-block-txt {
-    width: 40%;
-    background-color: pink;
-}
-
-/* FOOTER */
-.footer-top {
-    min-height: 40px;
-    /* justify-content: space-between; */
-    align-items: center;
-}
-
-.footer-top-left {
-    width: 20%;
-}
-
-.footer-top-right {
+.hero-container {
     width: 80%;
-    justify-content: space-between;
-}
-
-.footer-bottom {
-    height: 40px;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Utilities */
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
 .border {
     border: 1px dashed black;
 }
@@ -153,34 +90,110 @@ ul {
     padding-right: 20px;
 }
 
-.bg-color-azzurro-chiaro {
-    background-color: var(--azzurro-chiaro);
+.bg-light-azure {
+    background-color: var(--light-azure);
 }
 
-.bg-color-arancione {
-    background-color: var(--arancione)
+.bg-orange {
+    background-color: var(--orange)
 }
 
-.bg-color-grigio-chiaro {
-    background-color: var(--grigio-chiaro);
+.bg-light-gray {
+    background-color: var(--light-gray);
 }
 
-.bg-color-bianco {
-    background-color: var(--bianco)
+.bg-white {
+    background-color: var(--white)
 }
 
-.bg-color-verde-prato {
-    background-color: var(--verde-prato)
+.bg-green-grass {
+    background-color: var(--green-grass)
 }
 
-.bg-color-grigio-scuro {
-    background-color: var(--grigio-scuro)
+.bg-dark-gray {
+    background-color: var(--dark-gray)
 }
 
-.bg-color-rosa {
-    background-color: var(--rosa);
+.bg-pink {
+    background-color: var(--pink);
 }
 
-.flex-dir-row-rev {
-    flex-direction: row-reverse;
+
+/* HEADER */
+
+.header {
+    height: 80px;
+    align-items: center;
+}
+
+.header-nav {
+    align-items: center;
+}
+
+.nav-img {
+    width: 20%;
+}
+
+.nav-menu {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* in alternativa usare MARGIN, che lavora anche senza flex*/
+
+}
+
+.nav-btn {
+    width: 20%;
+    text-align: right;
+}
+
+/* HERO */
+.hero {
+    background-color: darkblue;
+}
+
+.hero-content {
+    background-color: plum;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* CONTENT BLOCK */
+.content-block-img {
+    width: 60%;
+    background-color: dodgerblue;
+}
+
+.content-block-txt {
+    width: 40%;
+    background-color: pink;
+}
+
+/* FOOTER */
+.footer-top {
+    /* justify-content: space-between; */
+    align-items: center;
+
+    /* debug */
+    /* min-height: 40px; */
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.footer-bottom {
+    /* height: 40px; */
+    justify-content: space-between;
+    align-items: center;
 }
